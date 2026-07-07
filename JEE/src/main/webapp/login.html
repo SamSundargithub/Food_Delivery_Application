@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EatnEat - Login</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+
+}
+
+.container{
+
+    width:400px;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+}
+
+.container h1{
+
+    text-align:center;
+    color:#e23744;
+    margin-bottom:30px;
+
+}
+
+.input-box{
+
+    margin-bottom:20px;
+
+}
+
+.input-box label{
+
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#444;
+
+}
+
+.input-box input{
+
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+
+}
+
+.input-box input:focus{
+
+    border-color:#e23744;
+
+}
+
+.options{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    font-size:14px;
+
+}
+
+.options a{
+
+    text-decoration:none;
+    color:#e23744;
+
+}
+
+.options a:hover{
+
+    text-decoration:underline;
+
+}
+
+button{
+
+    width:100%;
+    padding:14px;
+    background:#e23744;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#c6202e;
+
+}
+
+.signup{
+
+    text-align:center;
+    margin-top:20px;
+
+}
+
+.signup a{
+
+    color:#e23744;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+.signup a:hover{
+
+    text-decoration:underline;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>EatnEat</h1>
+
+<form action="callLoginServlet" method="post">
+
+<div class="input-box">
+
+<label>Username</label>
+
+<input type="text"
+       name="username"
+       placeholder="Enter your username"
+       required>
+
+</div>
+
+<div class="input-box">
+
+<label>Password</label>
+
+<input type="password"
+       name="password"
+       placeholder="Enter your password"
+       required>
+
+</div>
+
+<div class="options">
+
+<label>
+<input type="checkbox">
+ Remember Me
+</label>
+
+<a href="#">Forgot Password?</a>
+
+</div>
+
+<button type="submit">Login</button>
+
+<div class="signup">
+
+Don't have an account?
+<a href="register.html">Sign Up</a>
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EatnEat - Restaurant Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+/* Header */
+
+header{
+    position:absolute;
+    width:100%;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+
+.logo{
+    color:white;
+    font-size:35px;
+    font-weight:bold;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+}
+
+.content{
+    position:relative;
+    color:white;
+}
+
+.content h1{
+    font-size:70px;
+}
+
+.content p{
+    font-size:25px;
+    margin:20px 0;
+}
+
+.search-box{
+    margin-top:30px;
+}
+
+.search-box input{
+    width:500px;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    font-size:17px;
+}
+
+.search-box button{
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#e23744;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+.search-box button:hover{
+    background:#c81d2a;
+}
+
+/* Categories */
+
+.section-title{
+    text-align:center;
+    margin-top:60px;
+    font-size:35px;
+    color:#333;
+}
+
+.categories{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    margin:50px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:220px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+}
+
+.card h3{
+    text-align:center;
+    padding:15px;
+}
+
+/* Features */
+
+.features{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin:50px;
+}
+
+.feature-box{
+    width:300px;
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.feature-box h2{
+    color:#e23744;
+    margin-bottom:15px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+    padding:20px;
+}
+
+.content h1{
+    font-size:45px;
+}
+
+.search-box input{
+    width:90%;
+    margin-bottom:15px;
+}
+
+.search-box button{
+    margin-left:0;
+}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">EatnEat</div>
+
+<nav>
+<a href="#">Home</a>
+
+<a href="login.html">Login</a>
+<a href="register.html">Sign Up</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="content">
+
+<h1>Discover the Best Food Near You</h1>
+
+<p>Order food from your favourite restaurants.</p>
+
+<div class="search-box">
+
+<input type="text" placeholder="Search for restaurant, food or location">
+
+<button>Search</button>
+
+</div>
+
+</div>
+
+</section>
+
+<h2 class="section-title">Popular Categories</h2>
+
+<section class="categories">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80">
+<h3>Burgers</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80">
+<h3>Pizza</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80">
+<h3>Biryani</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80">
+<h3>Desserts</h3>
+</div>
+
+</section>
+
+<h2 class="section-title">Why Choose Foodie?</h2>
+
+<section class="features">
+
+<div class="feature-box">
+<h2>🍴 1000+</h2>
+<p>Restaurants available across your city.</p>
+</div>
+
+<div class="feature-box">
+<h2>🚚 Fast Delivery</h2>
+<p>Hot food delivered in less than 30 minutes.</p>
+</div>
+
+<div class="feature-box">
+<h2>⭐ Best Ratings</h2>
+<p>Only highly rated restaurants are listed.</p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>© 2026 Foodie | Delicious Food Delivered Fast</h3>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EatnEat - Register</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+}
+
+.container{
+
+    width:420px;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+
+}
+
+h1{
+
+    text-align:center;
+    color:#e23744;
+    margin-bottom:25px;
+
+}
+
+input,textarea{
+
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+
+}
+
+textarea{
+
+    resize:none;
+    height:80px;
+
+}
+
+button{
+
+    width:100%;
+    padding:13px;
+    background:#e23744;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#c6202e;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:#e23744;
+    font-weight:bold;
+
+}
+
+.bottom{
+
+    text-align:center;
+    margin-top:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Create Account</h1>
+
+<form action="callRegisterServlet" method="post">
+
+<label>Username</label>
+<input type="text" name="username" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Password</label>
+<input type="password" name="password" required>
+
+<label>Select Role</label>
+<select name = "role">
+	<option value = "">Choose Role</option>
+	<option value = "customer">Customer</option>
+	<option value = "restaurantOwner">Restaurant Owner</option>
+	<option value = "admin">Admin</option>
+</select>
+<br>
+
+<label>Phone</label>
+<input type="text" name="number" required>
+
+<label>Address</label>
+<textarea name="address" required></textarea>
+
+<input type="hidden" name="role" value="Customer">
+
+<button type="submit">Sign Up</button>
+
+<div class="bottom">
+
+Already have an account?
+<a href="login.html">Login</a>
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

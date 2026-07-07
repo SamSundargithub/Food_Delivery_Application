@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EatnEat - Restaurants</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+/* Navbar */
+
+.navbar{
+
+    height:70px;
+    background:#e23744;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+
+}
+
+.logo{
+
+    font-size:30px;
+    font-weight:bold;
+
+}
+
+.nav-links a{
+
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+
+}
+
+.nav-links a:hover{
+
+    color:#ffd700;
+
+}
+
+/* Banner */
+
+.banner{
+
+    height:250px;
+    background:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.banner h1{
+
+    color:white;
+    font-size:50px;
+    background:rgba(0,0,0,.5);
+    padding:15px 35px;
+    border-radius:10px;
+
+}
+
+/* Search */
+
+.search{
+
+    text-align:center;
+    margin:35px;
+
+}
+
+.search input{
+
+    width:450px;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:30px;
+    font-size:16px;
+
+}
+
+/* Restaurant Cards */
+
+.container{
+
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-bottom:50px;
+
+}
+
+.card{
+
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+
+}
+
+.details{
+
+    padding:20px;
+
+}
+
+.details h2{
+
+    color:#333;
+    margin-bottom:10px;
+
+}
+
+.rating{
+
+    background:#28a745;
+    color:white;
+    display:inline-block;
+    padding:5px 10px;
+    border-radius:5px;
+    margin-bottom:10px;
+
+}
+
+.info{
+
+    color:#666;
+    margin-bottom:8px;
+
+}
+
+button{
+
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:#e23744;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#c6202e;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">EatnEat</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="login.html">Login</a>
+<a href="register.html">SignUp</a>
+
+</div>
+
+</div>
+
+<div class="banner">
+
+<h1>Explore Restaurants</h1>
+
+</div>
+
+<div class="search">
+
+<input type="text" placeholder="Search restaurants...">
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=80">
+
+<div class="details">
+
+<h2>Spice Garden</h2>
+
+<div class="rating">⭐ 4.6</div>
+
+<p class="info"><b>Cuisine:</b> South Indian, Chinese</p>
+
+<p class="info"><b>Location:</b> Chennai</p>
+
+<p class="info"><b>Phone:</b> +91 9876543210</p>
+
+<p class="info"><b>Address:</b> Anna Nagar, Chennai</p>
+
+
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80">
+
+<div class="details">
+
+<h2>Pizza Hub</h2>
+
+<div class="rating">⭐ 4.4</div>
+
+<p class="info"><b>Cuisine:</b> Italian</p>
+
+<p class="info"><b>Location:</b> Bangalore</p>
+
+<p class="info"><b>Phone:</b> +91 9876501234</p>
+
+<p class="info"><b>Address:</b> MG Road, Bangalore</p>
+
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1515669097368-22e68427d265?auto=format&fit=crop&w=1000&q=80">
+
+<div class="details">
+
+<h2>Biryani Palace</h2>
+
+<div class="rating">⭐ 4.8</div>
+
+<p class="info"><b>Cuisine:</b> Mughlai, Biryani</p>
+
+<p class="info"><b>Location:</b> Hyderabad</p>
+
+<p class="info"><b>Phone:</b> +91 9988776655</p>
+
+<p class="info"><b>Address:</b> Banjara Hills, Hyderabad</p>
+
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>© 2026 Foodie | Discover Great Restaurants</h3>
+
+</footer>
+
+</body>
+</html>

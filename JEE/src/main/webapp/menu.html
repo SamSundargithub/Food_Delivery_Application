@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EatnEat - Restaurant Menu</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#e23744;
+    color:white;
+    padding:15px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:17px;
+}
+
+.nav-links a:hover{
+    color:#ffd700;
+}
+
+/* Restaurant Banner */
+
+.banner{
+    height:280px;
+    background:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner-content{
+    background:rgba(0,0,0,.6);
+    padding:20px 40px;
+    border-radius:10px;
+    color:white;
+    text-align:center;
+}
+
+.banner-content h1{
+    font-size:42px;
+}
+
+.banner-content p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Menu Title */
+
+.title{
+    text-align:center;
+    margin:40px 0;
+    color:#333;
+    font-size:35px;
+}
+
+/* Menu Grid */
+
+.menu-container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding-bottom:50px;
+}
+
+/* Food Card */
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.details{
+    padding:20px;
+}
+
+.details h2{
+    color:#333;
+    margin-bottom:10px;
+}
+
+.details p{
+    color:#666;
+    margin-bottom:15px;
+    line-height:1.5;
+}
+
+.price{
+    color:#e23744;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#e23744;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:17px;
+}
+
+button:hover{
+    background:#c6202e;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">EatnEat</div>
+
+<div class="nav-links">
+
+<a href="cart.jsp">Cart</a>
+<a href="login.html">Logout</a>
+</div>
+
+</div>
+
+<div class="banner">
+
+<div class="banner-content">
+
+<h1>Spice Garden</h1>
+
+<p>South Indian • Chinese • North Indian</p>
+
+</div>
+
+</div>
+
+<h2 class="title">Today's Menu</h2>
+
+<div class="menu-container">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80">
+
+<div class="details">
+
+<h2>Chicken Burger</h2>
+
+<p>Juicy grilled chicken burger with cheese, lettuce and fresh vegetables.</p>
+
+<div class="price">₹199</div>
+
+<button>Add to Cart</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80">
+
+<div class="details">
+
+<h2>Margherita Pizza</h2>
+
+<p>Thin crust pizza topped with mozzarella cheese and fresh basil.</p>
+
+<div class="price">₹349</div>
+
+<button>Add to Cart</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=900&q=80">
+
+<div class="details">
+
+<h2>Chicken Biryani</h2>
+
+<p>Authentic dum biryani served with raita and spicy gravy.</p>
+
+<div class="price">₹280</div>
+
+<button>Add to Cart</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80">
+
+<div class="details">
+
+<h2>Chocolate Milkshake</h2>
+
+<p>Rich chocolate milkshake topped with whipped cream and chocolate chips.</p>
+
+<div class="price">₹149</div>
+
+<button>Add to Cart</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=80">
+
+<div class="details">
+
+<h2>Veg Salad</h2>
+
+<p>Fresh vegetables mixed with olive oil dressing and herbs.</p>
+
+<div class="price">₹120</div>
+
+<button>Add to Cart</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80">
+
+<div class="details">
+
+<h2>French Fries</h2>
+
+<p>Golden crispy fries served with tomato ketchup and mayonnaise.</p>
+
+<div class="price">₹99</div>
+
+<button>Add to Cart</button>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>© 2026 Foodie | Enjoy Every Bite</h3>
+
+</footer>
+
+</body>
+</html>
