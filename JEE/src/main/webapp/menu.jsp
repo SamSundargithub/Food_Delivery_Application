@@ -208,11 +208,39 @@ footer{
 	
 	for(Menu m : allMenuRest){
 		
+		String image = "";
+		
+		switch(m.getItem_name()){
+		
+		case "Filter Coffee":
+		    image = "menu-images/coffee.png";
+		    break;
+		    
+		case "Idli" :
+			image = "menu-images/idly.png";
+			break;
+			
+		case "Poori Masala" :
+			image = "menu-images/poori.png";
+			break;
+			
+		case "South Indian Meals" :
+			image = "menu-images/southindian.png";
+			break;
+			
+		case "Masala Dosa" :
+			image = "menu-images/masaladosa.png";
+			break;
+			
+		default:
+		    image = "menu-images/default-image.png";
+		}
 		%>
 		
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80">
+
+<img src="<%= image %>" alt="<%= m.getItem_name() %>">
 
 <div class="details">
 
